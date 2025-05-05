@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Seu Nome</a>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="img/profile.jpg" alt="Sua Foto de Perfil" class="profile-image">
+                <h1>Olá, eu sou <span>Seu Nome</span></h1>
+                <p class="lead">Desenvolvedor Front-end apaixonado por criar experiências web incríveis.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                <a href="#projetos" class="button primary-button">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Aqui você pode escrever uma descrição detalhada sobre você, sua paixão por desenvolvimento, sua jornada e seus objetivos. Destaque suas principais qualidades e o que te motiva.</p>
+                    <p>Fale sobre suas experiências passadas, projetos relevantes e como você pode agregar valor a futuras colaborações. Seja autêntico e mostre sua personalidade.</p>
+                    </div>
+                <div class="skills-list">
+                    <h3>Minhas Principais Habilidades:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 (com animações e transições avançadas)</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js ou Vue.js (escolha um framework)</li>
+                        <li>Design Responsivo (Mobile-First)</li>
+                        <li>SEO Básico</li>
+                        <li>Git e Controle de Versão</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-bar" data-skill="HTML" data-level="90">
+                        <span class="skill-label">HTML</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar" data-skill="CSS" data-level="85">
+                        <span class="skill-label">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar" data-skill="JavaScript" data-level="75">
+                        <span class="skill-label">JavaScript</span>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/project1-thumb.jpg" alt="Projeto 1">
+                    <div class="project-info">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Breve descrição do Projeto 1. Destaque as tecnologias utilizadas e o objetivo principal.</p>
+                        <a href="#" target="_blank" class="button secondary-button">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/project2-thumb.jpg" alt="Projeto 2">
+                    <div class="project-info">
+                        <h3>Nome do Projeto 2</h3>
+                        <p>Breve descrição do Projeto 2. Mencione os desafios superados e os resultados alcançados.</p>
+                        <a href="#" target="_blank" class="button secondary-button">Ver Detalhes</a>
+                    </div>
+                </div>
+                </div>
+            <button class="load-more-button">Carregar Mais Projetos</button>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button primary-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
